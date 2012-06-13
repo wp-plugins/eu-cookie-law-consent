@@ -20,7 +20,7 @@ It started as an EU Directive that was adopted by all EU countries on May 26th 2
 
 Each EU member state has done or is doing the same thing. Although they all have their own approach and interpretation, the basic requirements of the directive remain the same.
 
-This plug-in will create a small banner at the top of the guest’s browser that greets them with the message:
+This plug-in will create a small banner at the top of the guest's browser that greets them with the message:
 
 `We use cookies to ensure that we give you the best experience on our website. If you continue without changing your settings, we'll assume that you are happy to receive all cookies from this website. If you would like to change your preferences you may do so by following the instructions <a href="http://www.aboutcookies.org/Default.aspx?page=1">here</a>`
 
