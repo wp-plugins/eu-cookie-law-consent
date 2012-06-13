@@ -1,12 +1,16 @@
 === Plugin Name ===
+Contributors: azuliadesigns
 Plugin Name: EU Cookie Law Complience
 Plugin URI:  http://azuliadesigns.com/wordpress-plugin-eu-cookie-law/
+Donate link: http://azuliadesigns.com/wordpress-plugin-eu-cookie-law/
 Version: 1.00
 Author: Azulia Designs
 Tags: cookie law, cookies, eu law
 Requires at least: 2.7.0
 Tested up to: 3.3.2
 Stable tag: trunk
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This is a small plugin which adds notification to the top of the page for each guest. This plug-in is used for implied consent, which means that if the guest continues using the site they agree to cookie use.
 
