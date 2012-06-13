@@ -12,7 +12,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This is a small plugin which adds notification to the top of the page for each guest. This plug-in is used for implied consent, which means that if the guest continues using the site they agree to cookie use.
+Adds a message to the top of the page stating that cookies are used and if they continue viewing the site then that counts as implied consent.
 
 == Description ==
 
