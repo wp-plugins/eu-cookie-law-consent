@@ -3,11 +3,11 @@ Contributors: azuliadesigns
 Plugin Name: EU Cookie Law Complience
 Plugin URI:  http://azuliadesigns.com/wordpress-plugin-eu-cookie-law/
 Donate link: http://azuliadesigns.com/wordpress-plugin-eu-cookie-law/
-Version: 1.00
+Version: 1.01
 Author: Azulia Designs
 Tags: cookie law, cookies, eu law
 Requires at least: 2.7.0
-Tested up to: 3.3.2
+Tested up to: 3.4.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -40,6 +40,12 @@ Whilst every effort has been taken to ensure that this code remains up to date a
 
 It is your responsibility to ensure that implied consent is suitable for your site before using this code or plugin.
 
+CHANGE LOG
+
+1.01	Fix for IE8 CSS
+	Fixed broken PHP tag in code
+
+1.00	Initial Release
 
 == Installation ==
 

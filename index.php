@@ -4,7 +4,7 @@ Plugin Name: EU Cookie Law Complience Message
 Plugin URI:  http://azuliadesigns.com/wordpress-plugin-eu-cookie-law/
 Description: This is a small plug-in which adds a banner to the page on the first page view for each visitor. This plug-in is used for implied consent, which means that if the guest continues using the site they agree to cookie use. See plug-in homepage for live demo.
 Author: Azulia Designs
-Version: 1.00
+Version: 1.01
 Author URI: http://azuliadesigns.com/
 */
 
@@ -25,7 +25,7 @@ jQuery(function(){
   {
     if (document.cookie.indexOf("visited") == -1)
 	{
-	  jQuery('body').prepend('<div id="cookie" style="display:none;position:absolute;left:0;top:0;width:100%;background:rgba(0,0,0,0.8);z-index:9999"><div style="width:800px;margin-left:auto;margin-right:auto;padding:10px 0"><h2 style="margin:0;padding:0;color:white;display: block;float: left;height: 40px;line-height: 20px;text-align: right;width: 140px;font: normal normal normal 18px Arial,verdana,sans-serif"><?php echo addslashes(get_option('notificationTitle', $defaultTitle)); ?></h2><p style="color:#BEBEBE;display: block;float: left;font: normal normal normal 13px Arial,verdana,sans-serif;height: 64px;line-height: 16px;margin:0 0 0 30px;padding:0;width:450px;"><?php echo addslashes(get_option('notificationMessage', $defaultMessage)); ?></p><div style="float:left;margin-left:10px"><a href="#" id="closecookie" style="color:white;font:12px Arial;text-decoration:none">Close</a></div><div style="clear:both"></div></div></div>');
+	  jQuery('body').prepend('<div id="cookie" style="display:none;position:absolute;left:0;top:0;width:100%;background:black;background:rgba(0,0,0,0.8);z-index:9999"><div style="width:800px;margin-left:auto;margin-right:auto;padding:10px 0"><h2 style="margin:0;padding:0;color:white;display: block;float: left;height: 40px;line-height: 20px;text-align: right;width: 140px;font: normal normal normal 18px Arial,verdana,sans-serif"><?php echo addslashes(get_option('notificationTitle', $defaultTitle)); ?></h2><p style="color:#BEBEBE;display: block;float: left;font: normal normal normal 13px Arial,verdana,sans-serif;height: 64px;line-height: 16px;margin:0 0 0 30px;padding:0;width:450px;"><?php echo addslashes(get_option('notificationMessage', $defaultMessage)); ?></p><div style="float:left;margin-left:10px"><a href="#" id="closecookie" style="color:white;font:12px Arial;text-decoration:none">Close</a></div><div style="clear:both"></div></div></div>');
 	  jQuery('#cookie').show("fast");
 	  jQuery('#closecookie').click(function() {jQuery('#cookie').hide("fast");});
 	  document.cookie="visited=yes; expires=Thu, 31 Dec 2020 23:59:59 UTC; path=/";
@@ -33,7 +33,7 @@ jQuery(function(){
   }
 })
 </script>
-<?
+<?php
 }
 add_action('wp_footer', 'EUCLC_cookieMessage'); 
 
