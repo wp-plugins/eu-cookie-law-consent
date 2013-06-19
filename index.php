@@ -4,11 +4,9 @@ Plugin Name: EU Cookie Law Complience Message
 Plugin URI:  http://azuliadesigns.com/wordpress-plugin-eu-cookie-law/
 Description: This is a small plugin which adds a banner to the page on the first page view for each visitor. This plugin is used for implied consent, which means that if the guest continues using the site they agree to cookie use. See plugin homepage for live demo!
 Author: Azulia Designs
-Version: 2.00
+Version: 2.01
 Author URI: http://azuliadesigns.com/
 */
-
-add_filter('show_admin_bar', '__return_false');
 
 // Tell WordPress we need jQuery loaded
 function EUCLC_enqueueScripts()  
