@@ -2,7 +2,7 @@
 Contributors: azuliadesigns
 Plugin Name: EU Cookie Law Complience
 Plugin URI:  http://azuliadesigns.com/wordpress-plugin-eu-cookie-law/
-Version: 2.01
+Version: 2.02
 Author: Azulia Designs
 Tags: cookie law, cookies, eu law
 Requires at least: 2.7.0
@@ -40,6 +40,8 @@ Whilst every effort has been taken to ensure that this code remains up to date a
 It is your responsibility to ensure that implied consent is suitable for your site before using this code or plugin.
 
 CHANGE LOG
+
+2,02	Fixed compatibility with conflicting function names
 
 2.01	Fixed bug hiding admin bar (test code remained)
 

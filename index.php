@@ -3,9 +3,10 @@
 Plugin Name: EU Cookie Law Complience Message
 Plugin URI:  http://azuliadesigns.com/wordpress-plugin-eu-cookie-law/
 Description: This is a small plugin which adds a banner to the page on the first page view for each visitor. This plugin is used for implied consent, which means that if the guest continues using the site they agree to cookie use. See plugin homepage for live demo!
-Author: Azulia Designs
-Version: 2.01
-Author URI: http://azuliadesigns.com/
+Author: Tim Trott
+Version: 2.02
+Author URI: http://timtrott.co.uk/
+
 */
 
 // Tell WordPress we need jQuery loaded
@@ -64,7 +65,7 @@ function EUCLC_cookieMessage()
 	}
 	else
 	{
-		$backgroundColour = hex2rgb($setting_value['backgroundColour']);
+		$backgroundColour = EUCLC_hex2rgb($setting_value['backgroundColour']);
 		$backgroundTransparency = $setting_value['backgroundTransparency'];
 		$titleColour = $setting_value['titleColour'];
 		$titleSize = $setting_value['titleSize'];
@@ -330,7 +331,7 @@ add_action('admin_init','EUCLC_defaults');
 
 // Utility function to convert hex colour code to RGB
 // Credit: http://bavotasan.com/2011/convert-hex-color-to-rgb-using-php/
-function hex2rgb($hex) {
+function EUCLC_hex2rgb($hex) {
    $hex = str_replace("#", "", $hex);
 
    if(strlen($hex) == 3) {
